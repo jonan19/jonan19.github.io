@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>K.J.Somaiya - Feedback</title>
+    <title>Excellence University - Feedback</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,7 +11,8 @@
     <nav class="navbar">
         <div class="container">
             <div class="logo">
-                <h2>K.J.Somaiya</h2>
+                <span class="logo-icon">🎓</span>
+                <h2>Excellence University</h2>
             </div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
@@ -24,72 +25,193 @@
 
     <!-- Page Header -->
     <section class="page-header">
+        <div class="page-header-overlay"></div>
         <div class="container">
-            <h1>Feedback</h1>
+            <h1>We Value Your Feedback</h1>
+            <p>Help us improve by sharing your thoughts and suggestions</p>
         </div>
     </section>
 
     <!-- Main Content -->
     <main class="container">
         <section class="content-section">
-            <p>We value your feedback! Please share your thoughts and suggestions to help us improve.</p>
-            
-            <div class="feedback-form">
+            <div class="feedback-intro">
+                <p>Your feedback is crucial in helping us maintain and improve the quality of education and services we provide. Whether you're a student, parent, alumni, or visitor, we'd love to hear from you!</p>
+            </div>
+
+            <div class="feedback-form-container">
                 <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
+                    <label for="name">Full Name <span class="required">*</span></label>
+                    <input type="text" id="name" placeholder="Enter your full name">
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email Address <span class="required">*</span></label>
+                        <input type="email" id="email" placeholder="your.email@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" placeholder="+91 1234567890">
+                    </div>
                 </div>
 
                 <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="category">Feedback Category:</label>
-                    <select id="category" name="category">
-                        <option value="">Select a category</option>
-                        <option value="academics">Academics</option>
-                        <option value="facilities">Facilities</option>
-                        <option value="administration">Administration</option>
+                    <label for="userType">You are a <span class="required">*</span></label>
+                    <select id="userType">
+                        <option value="">Select your role</option>
+                        <option value="student">Current Student</option>
+                        <option value="alumni">Alumni</option>
+                        <option value="parent">Parent/Guardian</option>
+                        <option value="faculty">Faculty Member</option>
+                        <option value="visitor">Visitor</option>
                         <option value="other">Other</option>
                     </select>
                 </div>
 
                 <div class="form-group">
-                    <label for="rating">Rating:</label>
-                    <select id="rating" name="rating">
-                        <option value="">Select rating</option>
-                        <option value="5">Excellent</option>
-                        <option value="4">Good</option>
-                        <option value="3">Average</option>
-                        <option value="2">Poor</option>
-                        <option value="1">Very Poor</option>
+                    <label for="category">Feedback Category <span class="required">*</span></label>
+                    <select id="category">
+                        <option value="">Select a category</option>
+                        <option value="academics">Academic Programs</option>
+                        <option value="facilities">Campus Facilities</option>
+                        <option value="faculty">Faculty & Teaching</option>
+                        <option value="administration">Administration</option>
+                        <option value="infrastructure">Infrastructure</option>
+                        <option value="placement">Placement & Career Services</option>
+                        <option value="library">Library Services</option>
+                        <option value="hostel">Hostel & Accommodation</option>
+                        <option value="events">Events & Activities</option>
+                        <option value="other">Other</option>
                     </select>
                 </div>
 
                 <div class="form-group">
-                    <label for="message">Your Feedback:</label>
-                    <textarea id="message" name="message" rows="6" required></textarea>
+                    <label>Overall Rating <span class="required">*</span></label>
+                    <div class="rating-container">
+                        <div class="rating-option">
+                            <input type="radio" id="rating5" name="rating" value="5">
+                            <label for="rating5">
+                                <span class="star-rating">⭐⭐⭐⭐⭐</span>
+                                <span class="rating-text">Excellent</span>
+                            </label>
+                        </div>
+                        <div class="rating-option">
+                            <input type="radio" id="rating4" name="rating" value="4">
+                            <label for="rating4">
+                                <span class="star-rating">⭐⭐⭐⭐</span>
+                                <span class="rating-text">Good</span>
+                            </label>
+                        </div>
+                        <div class="rating-option">
+                            <input type="radio" id="rating3" name="rating" value="3">
+                            <label for="rating3">
+                                <span class="star-rating">⭐⭐⭐</span>
+                                <span class="rating-text">Average</span>
+                            </label>
+                        </div>
+                        <div class="rating-option">
+                            <input type="radio" id="rating2" name="rating" value="2">
+                            <label for="rating2">
+                                <span class="star-rating">⭐⭐</span>
+                                <span class="rating-text">Poor</span>
+                            </label>
+                        </div>
+                        <div class="rating-option">
+                            <input type="radio" id="rating1" name="rating" value="1">
+                            <label for="rating1">
+                                <span class="star-rating">⭐</span>
+                                <span class="rating-text">Very Poor</span>
+                            </label>
+                        </div>
+                    </div>
                 </div>
 
-                <button type="button" class="submit-btn" onclick="submitFeedback()">Submit Feedback</button>
+                <div class="form-group">
+                    <label for="message">Your Feedback <span class="required">*</span></label>
+                    <textarea id="message" rows="8" placeholder="Please share your detailed feedback, suggestions, or concerns..."></textarea>
+                    <small>Minimum 20 characters required</small>
+                </div>
+
+                <div class="form-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="anonymous">
+                        Submit as anonymous feedback
+                    </label>
+                </div>
+
+                <button type="button" class="btn btn-primary btn-large" onclick="submitFeedback()">
+                    Submit Feedback
+                </button>
                 
                 <div id="successMessage" class="success-message">
-                    Thank you for your feedback! We appreciate your input.
+                    <div class="success-icon">✅</div>
+                    <h3>Thank You!</h3>
+                    <p>Your feedback has been submitted successfully. We truly appreciate your input and will use it to improve our services.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Feedback Matters -->
+        <section class="content-section feedback-importance">
+            <div class="section-header">
+                <h2>Why Your Feedback Matters</h2>
+            </div>
+            <div class="importance-grid">
+                <div class="importance-card">
+                    <div class="importance-icon">📈</div>
+                    <h4>Continuous Improvement</h4>
+                    <p>Your insights help us identify areas for enhancement</p>
+                </div>
+                <div class="importance-card">
+                    <div class="importance-icon">🎯</div>
+                    <h4>Better Services</h4>
+                    <p>We tailor our services based on your needs</p>
+                </div>
+                <div class="importance-card">
+                    <div class="importance-icon">🤝</div>
+                    <h4>Community Building</h4>
+                    <p>Your voice shapes our institutional culture</p>
+                </div>
+                <div class="importance-card">
+                    <div class="importance-icon">💡</div>
+                    <h4>Innovation</h4>
+                    <p>Great ideas often come from feedback</p>
                 </div>
             </div>
         </section>
     </main>
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 K.J.Somaiya. All rights reserved.</p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Excellence University</h3>
+                    <p>Building futures through quality education since 1990</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>📍 123 College Street, City</p>
+                    <p>📞 +91 1234567890</p>
+                    <p>✉️ info@excellence.edu</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Excellence University. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 </body>
-
 </html>
