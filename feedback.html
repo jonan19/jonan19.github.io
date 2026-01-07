@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K.J.Somaiya - Feedback</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h2>K.J.Somaiya</h2>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="feedback.html" class="active">Feedback</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Feedback</h1>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container">
+        <section class="content-section">
+            <p>We value your feedback! Please share your thoughts and suggestions to help us improve.</p>
+            
+            <div class="feedback-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="category">Feedback Category:</label>
+                    <select id="category" name="category">
+                        <option value="">Select a category</option>
+                        <option value="academics">Academics</option>
+                        <option value="facilities">Facilities</option>
+                        <option value="administration">Administration</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="rating">Rating:</label>
+                    <select id="rating" name="rating">
+                        <option value="">Select rating</option>
+                        <option value="5">Excellent</option>
+                        <option value="4">Good</option>
+                        <option value="3">Average</option>
+                        <option value="2">Poor</option>
+                        <option value="1">Very Poor</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Your Feedback:</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </div>
+
+                <button type="button" class="submit-btn" onclick="submitFeedback()">Submit Feedback</button>
+                
+                <div id="successMessage" class="success-message">
+                    Thank you for your feedback! We appreciate your input.
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 K.J.Somaiya. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
