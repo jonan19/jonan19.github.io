@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>K.J.Somaiya - Contact</title>
+    <title>Excellence University - Contact</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,7 +11,8 @@
     <nav class="navbar">
         <div class="container">
             <div class="logo">
-                <h2>K.J.Somaiya</h2>
+                <span class="logo-icon">🎓</span>
+                <h2>Excellence University</h2>
             </div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
@@ -24,58 +25,181 @@
 
     <!-- Page Header -->
     <section class="page-header">
+        <div class="page-header-overlay"></div>
         <div class="container">
             <h1>Contact Us</h1>
+            <p>Get in touch with us - we're here to help</p>
         </div>
     </section>
 
     <!-- Main Content -->
     <main class="container">
+        <!-- Contact Info Cards -->
         <section class="content-section">
-            <div class="contact-info">
-                <div class="info-box">
-                    <h3>Address</h3>
-                    <p>123 Somewhere on the road to station<br>
-                    Vidyavihar, Maharashtra - 123456<br>
-                    Bharat</p>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">📍</div>
+                    <h3>Visit Us</h3>
+                    <p>Excellence University<br>
+                    123 College Street<br>
+                    City Name, State - 123456<br>
+                    India</p>
                 </div>
 
-                <div class="info-box">
-                    <h3>Phone</h3>
-                    <p>Main Office: +91 1234567890<br>
-                    Admissions: +91 0987654321</p>
+                <div class="contact-card">
+                    <div class="contact-icon">📞</div>
+                    <h3>Call Us</h3>
+                    <p>Main Office:<br>+91 1234567890</p>
+                    <p>Admissions:<br>+91 0987654321</p>
                 </div>
 
-                <div class="info-box">
-                    <h3>Email</h3>
-                    <p>info@somaiya.edu<br>
-                    admissions@somaiya.edu</p>
+                <div class="contact-card">
+                    <div class="contact-icon">✉️</div>
+                    <h3>Email Us</h3>
+                    <p>General Inquiries:<br>info@excellence.edu</p>
+                    <p>Admissions:<br>admissions@excellence.edu</p>
                 </div>
 
-                <div class="info-box">
+                <div class="contact-card">
+                    <div class="contact-icon">🕒</div>
                     <h3>Office Hours</h3>
-                    <p>Monday - Friday: 9:00 AM - 5:00 PM<br>
-                    Saturday: 9:00 AM - 1:00 PM<br>
-                    Sunday: Closed</p>
+                    <p>Monday - Friday<br>9:00 AM - 5:00 PM</p>
+                    <p>Saturday<br>9:00 AM - 1:00 PM</p>
+                    <p>Sunday: Closed</p>
                 </div>
             </div>
         </section>
 
+        <!-- Department Contacts -->
         <section class="content-section">
-            <h2>Location Map</h2>
-            <div class="map-placeholder">
-                <p>Map will be displayed here<br>
-                (Use Google Maps embed code)</p>
+            <div class="section-header">
+                <h2>Department Contacts</h2>
+                <p>Reach out to specific departments</p>
+            </div>
+            <div class="dept-contacts">
+                <div class="dept-contact-item">
+                    <h4>💻 Computer Science</h4>
+                    <p>cs@excellence.edu</p>
+                </div>
+                <div class="dept-contact-item">
+                    <h4>⚡ Electronics</h4>
+                    <p>ece@excellence.edu</p>
+                </div>
+                <div class="dept-contact-item">
+                    <h4>⚙️ Mechanical</h4>
+                    <p>mech@excellence.edu</p>
+                </div>
+                <div class="dept-contact-item">
+                    <h4>🏗️ Civil</h4>
+                    <p>civil@excellence.edu</p>
+                </div>
+                <div class="dept-contact-item">
+                    <h4>📊 Business</h4>
+                    <p>bba@excellence.edu</p>
+                </div>
+                <div class="dept-contact-item">
+                    <h4>🔬 Arts & Science</h4>
+                    <p>arts@excellence.edu</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="content-section">
+            <div class="section-header">
+                <h2>Find Us on Map</h2>
+            </div>
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <div class="map-icon">🗺️</div>
+                    <h3>Campus Location</h3>
+                    <p>Embed Google Maps here</p>
+                    <p class="map-instructions">To add a real map:<br>
+                    1. Go to Google Maps<br>
+                    2. Search for your location<br>
+                    3. Click "Share" → "Embed a map"<br>
+                    4. Copy the iframe code and replace this section</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Contact Form -->
+        <section class="content-section">
+            <div class="section-header">
+                <h2>Send Us a Quick Message</h2>
+                <p>Have a question? Drop us a message and we'll get back to you</p>
+            </div>
+            <div class="quick-contact-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="quick-name">Your Name</label>
+                        <input type="text" id="quick-name" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="quick-email">Your Email</label>
+                        <input type="email" id="quick-email" placeholder="Enter your email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="quick-subject">Subject</label>
+                    <input type="text" id="quick-subject" placeholder="What is this about?">
+                </div>
+                <div class="form-group">
+                    <label for="quick-message">Message</label>
+                    <textarea id="quick-message" rows="5" placeholder="Your message here..."></textarea>
+                </div>
+                <button type="button" class="btn btn-primary" onclick="sendQuickMessage()">Send Message</button>
+                <div id="quickMessageSuccess" class="success-message">
+                    Message sent successfully! We'll get back to you soon.
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Links -->
+        <section class="social-section">
+            <div class="section-header">
+                <h2>Connect With Us</h2>
+            </div>
+            <div class="social-links">
+                <a href="#" class="social-btn">📘 Facebook</a>
+                <a href="#" class="social-btn">📸 Instagram</a>
+                <a href="#" class="social-btn">🐦 Twitter</a>
+                <a href="#" class="social-btn">💼 LinkedIn</a>
+                <a href="#" class="social-btn">📹 YouTube</a>
             </div>
         </section>
     </main>
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 K.J.Somaiya. All rights reserved.</p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Excellence University</h3>
+                    <p>Building futures through quality education since 1990</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>📍 123 College Street, City</p>
+                    <p>📞 +91 1234567890</p>
+                    <p>✉️ info@excellence.edu</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Excellence University. All rights reserved.</p>
+            </div>
         </div>
     </footer>
-</body>
 
+    <script src="script.js"></script>
+</body>
 </html>
